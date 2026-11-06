@@ -1,0 +1,11 @@
+name: MSOBB Failing Edited Provider
+on:
+  pull_request:
+    types: [edited]
+jobs:
+  fail_marker:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo MSOBB-owned-negative-provider
+          exit 1

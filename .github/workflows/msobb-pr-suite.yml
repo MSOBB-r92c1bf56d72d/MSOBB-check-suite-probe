@@ -1,0 +1,9 @@
+name: MSOBB PR Suite
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+jobs:
+  marker:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo MSOBB-check-suite-marker
